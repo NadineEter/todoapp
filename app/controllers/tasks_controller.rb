@@ -6,6 +6,8 @@ class TasksController < ApplicationController
   def index
     @done = Task.where(done: true)
     @todo = Task.where(done: false)
+    @done = Task.where(done: true).order(created_at: :desc)
+    @todo = Task.where(done: false).order(updated_at: :desc)
   end
 
   # GET /tasks/1
