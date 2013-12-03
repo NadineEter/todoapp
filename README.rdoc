@@ -1,5 +1,7 @@
 == README
 
+Nadine Eter hat eine aufwendige To-Do App erstellt!!!
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
