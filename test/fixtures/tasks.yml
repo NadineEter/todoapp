@@ -5,9 +5,11 @@ one:
   deadline: 2013-12-03
   done: false
   duration: 1.5
+  user_id: 1
 
 two:
   name: MyString
   deadline: 2013-12-03
   done: false
   duration: 1.5
+  user_id: 1
