@@ -17,4 +17,11 @@ test "should get new" do
   xhr :get, :new
   assert_response :success
 end
+test "should create project" do
+  sign_in @user
+  assert_difference('Project.count') do
+    xhr :post, :create, project: { name: "Project Name" }
+  end
+  assert_response :success
+end
 end
