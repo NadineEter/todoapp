@@ -4,6 +4,7 @@
 <tr>
   <th></th>
   <th>Name</th>
+  <th>User</th>
   <th>
 <% if params[:sorting] == "deadline" %>
   Deadline ^
@@ -31,6 +32,7 @@
   <% end %>
 </td>
         <td class="<%= css_class %>"><%= link_to task.name, edit_task_path(task) %></td>
+        <td> <%= task.user.username %> </td>
         <td>
       <%= "in " if !task.is_delayed? %> 
       <%= pluralize(task.distance_from_now_in_days.abs, "Day")  %>
